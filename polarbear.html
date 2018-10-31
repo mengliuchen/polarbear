@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://www.daixiaorui.com/Public/js/jquery.min.js"></script>
+<style>
+body{
+  height:500px;
+  margin:0;
+  background-color: #A1CDF1
+}
+.content
+{
+  height:500px;
+  width:500px;
+  margin-left:600px;
+  margin-top:332px;
+  margin-bottom:0px;
+  position:relative;
+  overflow: hidden;
+}
+.bear{
+  height:500px;
+  width:500px;
+  margin-top:0px;
+  position:relative;
+  -webkit-animation: move 2s ;
+  -moz-animation: move 2s ;
+  -o-animation: move 2s ;
+  animation: move 2s ;
+}
+@keyframes move {
+  0%{
+    margin-top: 500px;
+  }
+  100%
+  {
+    margin-top: 0px;
+  }
+}
+.header{
+  height:200px;
+  width:200px;
+  margin:auto;
+  margin-top:50px;
+  border-radius: 45%;
+  background-color: white;
+}
+.leftear{
+  height:50px;
+  width: 80px;
+  margin:50px;
+  border-radius:100px 70px 0 0;
+  background-color: white;
+  transform: rotate(301deg);
+  position: absolute;
+  top:-40px;
+  left:62px;
+}
+.earblack1
+{
+  height:20px;
+  width: 40px;
+    margin:50px;
+  border-radius:40px 35px 0 0;
+  background-color: black;
+  transform: rotate(301deg);
+  position: absolute;
+  top:-20px;
+  left:90px;
+}
+.rightear
+{
+  height:50px;
+  width: 80px;
+  margin:50px;
+  border-radius:70px 100px 0 0;
+  background-color: white;
+  transform: rotate(59deg);
+  position: absolute;
+  top:-40px;
+  left:258px;
+}
+.earblack2
+{
+  height:20px;
+  width: 40px;
+    margin:50px;
+  border-radius:40px 35px 0 0;
+  background-color: black;
+  transform: rotate(59deg);
+  position: absolute;
+  top:-20px;
+  left:270px;
+}
+.eye1{
+  height:10px;
+  width:20px;
+  border-radius:50%;
+  background-color: black;
+  position: absolute;
+  z-index:2;
+  top:80px;
+  left:200px;
+  transform: rotate(345deg);
+}
+
+.eye2{
+  height:10px;
+  width:20px;
+  border-radius:50%;
+  background-color: black;
+  position: absolute;
+  z-index:2;
+  top:80px;
+  left:280px;
+  transform: rotate(15deg);
+}
+.halfface
+{
+  height:42px;
+  width:60px;
+  position: absolute;
+  z-index:3;
+  top:93px;
+  left:220px;
+}
+.nose
+{
+  background-color: black;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px/10px;
+  box-shadow: 1px 3px 5px grey;
+  position: absolute;
+  left:10px;
+  top:5px;
+}
+.bearbody
+{
+  height: 0;
+  width: 150px;
+  border-radius: 45% 45% 0 0;
+  border-bottom: 400px solid white;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  position: absolute;
+  top:160px;
+  left:-24px;
+}
+.eye-top{
+  height:12px;
+  width:24px;
+  border-radius:50%/100% 100% 0 0;
+  background-color:white;
+  position: absolute;
+  top:-13px;
+  left:-1px;
+  -webkit-animation: winktop 4s  infinite;
+  -moz-animation: winktop  4s infinite;
+  -o-animation: winktop 4s infinite;
+  animation: winktop 4s infinite;
+}
+@keyframes winktop {
+  80%{
+    top:-13px;
+  }
+85%
+  {
+    top:-4px;
+  }
+  90%
+  {
+    top:-13px;
+  }
+  95%
+  {
+    top:-4px;
+  }
+  100%
+  {
+    top:-13px;
+  }
+}
+.eye-bottom{
+  height:10px;
+  width:20px;
+  border-radius:50%/0 0 100% 100%;
+  background-color:white;
+  position: absolute;
+  top:11px;
+  -webkit-animation: winkbottom 4s infinite;
+  -moz-animation: winkbottom  4s infinite;
+  -o-animation: winkbottom 4s infinite;
+  animation: winkbottom 4s infinite;
+}
+@keyframes winkbottom {
+  80%{
+    top:11px;
+  }
+  85%
+  {
+    top:5px;
+  }
+  90%
+  {
+    top:11px
+  }
+  95%
+  {
+    top:5px;
+  }
+  100%
+  {
+    top:11px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="content">
+    <div class="bear">
+  <div class="leftear"></div>
+  <div class="rightear"></div>
+  <div class="earblack1"></div>
+  <div class="earblack2"></div>
+  <div class="header">
+    <div class="eye1">
+      <div class="eye-top"></div>
+      <div class="eye-bottom"></div>
+    </div>
+    <div class="eye2">
+      <div class="eye-top"></div>
+      <div class="eye-bottom"></div>
+    </div>
+    <div class="halfface">
+      <div class="nose"></div>
+    </div>
+    <div class="face2"></div>
+  </div>
+  <div class="bearbody"></div>
+
+</div>
+</div>
+</body>
+
+</html>
